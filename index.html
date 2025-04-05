@@ -28,177 +28,200 @@
 
   </head>
   <body class="flex flex-col items-center justify-center text-center bg-[#fff]">
+  
+  <div id="mobile-only">
 
-    <audio id="musicaFundo" autoplay="autoplay" loop preload="auto">
-      <source src="audio/musica.mp3" type="audio/mpeg" />
-      Seu navegador não suporta áudio HTML5.
-    </audio>
+      <audio id="musicaFundo" autoplay="autoplay" loop preload="auto">
+        <source src="audio/musica.mp3" type="audio/mpeg" />
+        Seu navegador não suporta áudio HTML5.
+      </audio>
 
-    <!-- Botão de play/pause -->
-    <button id="audioToggle"
-    class="absolute top-4 right-4 z-50 bg-[#332219] bg-opacity-70 text-white p-2 rounded-full shadow-md hover:bg-opacity-90 transition duration-300"
-    aria-label="Tocar ou pausar música">
-    ⏸️
-    </button>
+      <!-- Botão de play/pause -->
+      <button id="audioToggle"
+      class="absolute top-4 right-4 z-50 bg-[#332219] bg-opacity-70 text-white p-2 rounded-full shadow-md hover:bg-opacity-90 transition duration-300"
+      aria-label="Tocar ou pausar música">
+      ⏸️
+      </button>
 
-    <!-- Imagem do casal -->
-    <section class="relative w-full h-screen">
-      <img
-        src="img/casal.jpg"
-        alt="Casal"
-        class="w-full h-full object-cover"
-      />
-      <div class="absolute bottom-0 w-full h-28 bg-gradient-to-t from-[#fff] via-white/50 to-transparent"></div>
-    </section>
+      <!-- Imagem do casal -->
+      <section class="relative w-full h-screen">
+        <img
+          src="img/casal.jpg"
+          alt="Casal"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute bottom-0 w-full h-28 bg-gradient-to-t from-[#fff] via-white/50 to-transparent"></div>
+      </section>
 
-    <!-- Conteúdo principal -->
-    <section class="pt-12 px-4 pb-16 relative">
+      <!-- Conteúdo principal -->
+      <section class="pt-12 px-4 pb-16 relative">
 
-      <!-- Iniciais com flor -->
-      <div class="sdn-iniciais mb-6">
-        <span class="sdn-inicial-1">F</span>
-        <span class="text-[35px]">&</span>
-        <span class="sdn-inicial-2">G</span>
-      </div>
+        <!-- Iniciais com flor -->
+        <div class="sdn-iniciais mb-6">
+          <span class="sdn-inicial-1">F</span>
+          <span class="text-[35px]">&</span>
+          <span class="sdn-inicial-2">G</span>
+        </div>
 
-      <!-- Poema -->
-      <p class="frase-poetica mb-6 text-center text-lg opacity-0 fade-in-up fade-delay-2">
-        "E nós conhecemos, e cremos no amor que Deus
-        nos tem. Deus é amor. E quem está em amor
-        está em Deus, e Deus nele."<br />
-        <em>(João 4:16)</em>
-      </p>
+        <!-- Poema -->
+        <p class="frase-poetica mb-6 text-center text-lg opacity-0 fade-in-up fade-delay-2">
+          "E nós conhecemos, e cremos no amor que Deus
+          nos tem. Deus é amor. E quem está em amor
+          está em Deus, e Deus nele."<br />
+          <em>(João 4:16)</em>
+        </p>
+
+        <br />
+
+        <!-- Com as bênçãos -->
+        <p class="mb-4 text-[20px]">Com as bênçãos de Deus</p>
+
+        <br />
+
+        <!-- Nome dos noivos -->
+        <h2 class="nome-noivos mb-2 text-center text-[50px] font-cursive opacity-0 fade-in-up fade-delay-2">Fabíola & Gilvan</h2>
+
+        <br />
+
+        <!-- Convidam para... -->
+        <p class="mb-2 text-[20px]">Convidam para o seu casamento</p>
+
+        <br />
+
+        <!-- Data -->
+        <p class="mb-2 font-semibold text-[20px]">Sábado | 21.Junho.2025</p>
+
+        <br />
+
+        <!-- Local da cerimônia -->
+        <p class="mb-6 leading-relaxed text-[15px]">
+          16 Horas<br />
+          Paróquia Nossa Senhora de Fátima<br />
+          Rua São Caetano, 193<br />
+          Fartura/SP
+        </p>
+
+        <br />
+
+        <!-- Poema -->
+        <p class="frase-poetica mb-6 text-center text-lg opacity-0 fade-in-up fade-delay-2">
+          "Acima de tudo,<br />
+          porém, revistam-se do<br />
+          amor, que é o elo perfeito."<br />
+          <em>(Colossenses 3:14)</em>
+        </p>
+
+        <br />
+
+        <!-- Botões -->
+        <div class="grid grid-cols-3 gap-4 mt-8 text-[#332219] text-center">
+          <!-- Local da Missa -->
+          <a href="https://maps.app.goo.gl/i2PYNygQc986Cqd8A"
+            target="_blank"
+            class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
+            <img 
+              src="img/igreja.png" 
+              alt="https://www.flaticon.com/br/icones-gratis/catedral - catedral-ícones criados por justicon - Flaticon"
+              class="w-8 h-8 mb-1"
+            >
+            <!-- <i data-lucide="church" class="w-8 h-8 mb-1"></i> -->
+            <span class="text-sm">Local da Cerimônia</span>
+          </a>
+        
+          <!-- Local da Recepção -->
+          <a href="https://maps.app.goo.gl/dah6PNUcqUdtNsocA"
+            target="_blank"
+            class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
+            <img 
+              src="img/taca-de-champanhe.png" 
+              alt="Beber-ícones criados por Freepik - Flaticon" 
+              class="w-8 h-8 mb-1" 
+            />
+            <!-- <i data-lucide="glass-water" class="w-8 h-8 mb-1"></i> -->
+            <span class="text-sm">Local da Recepção</span>
+          </a>
+        
+          <!-- Sugestões de Presentes -->
+          <a href="https://noivos.casar.com/fabiolaegilvan"
+            target="_blank"
+            class="flex flex-col items-center transition-transform duration-300 hover:scale-110"> 
+            <img 
+              src="img/casal-de-noivos.png" 
+              alt="www.flaticon.com/br/icones-gratis/casamento Casamento-ícones criados por Freepik - Flaticon" 
+              class="w-8 h-8 mb-1"
+            >
+            <!-- <i data-lucide="gift" class="w-8 h-8 mb-1"></i> -->
+            <span class="text-sm">Site dos<br /> Noivos</span>
+          </a>
+        </div>
+
+        <br />
+        <br />
+        
+        <!-- Instrução botões -->
+        <p class="mb-6 leading-relaxed text-[15px]">
+          - Utilize os botões acima para navegar -
+        </p>
+
+      </section>
+
+      <section class="text-center text-[#332219] animate-fade-in">
+        <h2 class="text-2xl font-semibold mb-4">Contagem Regressiva</h2>
+        <div id="countdown" class="flex justify-center gap-6 text-xl sm:text-2xl font-bold">
+          <div>
+            <span id="days">00</span><br><span class="text-sm font-normal">dias</span>
+          </div>
+          <div>
+            <span id="hours">00</span><br><span class="text-sm font-normal">horas</span>
+          </div>
+          <div>
+            <span id="minutes">00</span><br><span class="text-sm font-normal">min</span>
+          </div>
+          <div>
+            <span id="seconds">00</span><br><span class="text-sm font-normal">seg</span>
+          </div>
+        </div>
+      </section>
 
       <br />
-
-      <!-- Com as bênçãos -->
-      <p class="mb-4 text-[20px]">Com as bênçãos de Deus</p>
-
       <br />
 
       <!-- Nome dos noivos -->
-      <h2 class="nome-noivos mb-2 text-center text-[50px] font-cursive opacity-0 fade-in-up fade-delay-2">Fabíola & Gilvan</h2>
+      <em><h2 class="nome-noivos mb-2 text-center text-[35px] font-cursive opacity-0 fade-in-up fade-delay-2">Esperamos por você!</h2></em>
 
-      <br />
-
-      <!-- Convidam para... -->
-      <p class="mb-2 text-[20px]">Convidam para o seu casamento</p>
-
-      <br />
-
-      <!-- Data -->
-      <p class="mb-2 font-semibold text-[20px]">Sábado | 21.Junho.2025</p>
-
-      <br />
-
-      <!-- Local da cerimônia -->
-      <p class="mb-6 leading-relaxed text-[15px]">
-        16 Horas<br />
-        Paróquia Nossa Senhora de Fátima<br />
-        Rua São Caetano, 193<br />
-        Fartura/SP
-      </p>
-
-      <br />
-
-      <!-- Poema -->
-      <p class="frase-poetica mb-6 text-center text-lg opacity-0 fade-in-up fade-delay-2">
-        "Acima de tudo,<br />
-        porém, revistam-se do<br />
-        amor, que é o elo perfeito."<br />
-        <em>(Colossenses 3:14)</em>
-      </p>
-
-      <br />
-
-      <!-- Botões -->
-      <div class="grid grid-cols-3 gap-4 mt-8 text-[#332219] text-center">
-        <!-- Local da Missa -->
-        <a href="https://maps.app.goo.gl/i2PYNygQc986Cqd8A"
-           target="_blank"
-           class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
-          <img 
-            src="img/igreja.png" 
-            alt="https://www.flaticon.com/br/icones-gratis/catedral - catedral-ícones criados por justicon - Flaticon"
-            class="w-8 h-8 mb-1"
-          >
-          <!-- <i data-lucide="church" class="w-8 h-8 mb-1"></i> -->
-          <span class="text-sm">Local da Cerimônia</span>
-        </a>
-      
-        <!-- Local da Recepção -->
-        <a href="https://maps.app.goo.gl/dah6PNUcqUdtNsocA"
-           target="_blank"
-           class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
-          <img 
-            src="img/taca-de-champanhe.png" 
-            alt="Beber-ícones criados por Freepik - Flaticon" 
-            class="w-8 h-8 mb-1" 
-          />
-          <!-- <i data-lucide="glass-water" class="w-8 h-8 mb-1"></i> -->
-          <span class="text-sm">Local da Recepção</span>
-        </a>
-      
-        <!-- Sugestões de Presentes -->
-        <a href="https://noivos.casar.com/fabiolaegilvan"
-           target="_blank"
-           class="flex flex-col items-center transition-transform duration-300 hover:scale-110"> 
-           <img 
-            src="img/casal-de-noivos.png" 
-            alt="www.flaticon.com/br/icones-gratis/casamento Casamento-ícones criados por Freepik - Flaticon" 
-            class="w-8 h-8 mb-1"
-          >
-          <!-- <i data-lucide="gift" class="w-8 h-8 mb-1"></i> -->
-          <span class="text-sm">Site dos<br /> Noivos</span>
-        </a>
-      </div>
-
-      <br />
       <br />
       
-      <!-- Instrução botões -->
-      <p class="mb-6 leading-relaxed text-[15px]">
-        - Utilize os botões acima para navegar -
-      </p>
 
-    </section>
+      <!-- Rodapé com imagem de paisagem -->
+      <footer class="w-full mt-10">
+        <img
+          src="img/paisagem.png"
+          alt="Paisagem romântica"
+          class="w-full object-cover h-80"
+          loading="lazy"
+        />
+      </footer>
 
-    <section class="text-center text-[#332219] animate-fade-in">
-      <h2 class="text-2xl font-semibold mb-4">Contagem Regressiva</h2>
-      <div id="countdown" class="flex justify-center gap-6 text-xl sm:text-2xl font-bold">
-        <div>
-          <span id="days">00</span><br><span class="text-sm font-normal">dias</span>
+    </div>
+
+    <div id="desktop-warning" class="hidden">
+      <div class="flex flex-col items-center justify-center min-h-screen bg-[#fff] text-[#332219] text-center px-4 relative">
+        
+        <!-- Texto central -->
+        <div class="z-10">
+          <h1 class="text-2xl font-bold mb-4">Só no celular, viu? 😉</h1>
+          <p class="text-lg max-w-md">Esse convite foi feito com carinho pra ser visto no seu celular. Abre aí pra curtir a experiência completa 💍📱</p>
         </div>
-        <div>
-          <span id="hours">00</span><br><span class="text-sm font-normal">horas</span>
-        </div>
-        <div>
-          <span id="minutes">00</span><br><span class="text-sm font-normal">min</span>
-        </div>
-        <div>
-          <span id="seconds">00</span><br><span class="text-sm font-normal">seg</span>
-        </div>
-      </div>
-    </section>
-
-    <br />
-    <br />
-
-    <!-- Nome dos noivos -->
-    <em><h2 class="nome-noivos mb-2 text-center text-[35px] font-cursive opacity-0 fade-in-up fade-delay-2">Esperamos por você!</h2></em>
-
-    <br />
     
-
-    <!-- Rodapé com imagem de paisagem -->
-    <footer class="w-full mt-10">
-      <img
-        src="img/paisagem.png"
-        alt="Paisagem romântica"
-        class="w-full object-cover h-80"
-        loading="lazy"
-      />
-    </footer>
+        <!-- GIF fixado na parte inferior -->
+        <img 
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZvcXl6OWZlemZseTFpeHlxdzluY2ViMGdzNnd3ejNlcjZkbzdsOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1BcSawJYHPjfHekFYe/giphy.gif" 
+          alt="Mobile only" 
+          class="w-64 h-auto absolute bottom-0 mb-4"
+        />
+      </div>
+    </div>
+    
 
     <script src="script.js"></script>
 

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+/* Estilização das iniciais F e G com a flor */
+.sdn-iniciais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #332219;
+}
+
+/* Fundo e texto com cor personalizada */
+body {
+  background-color: #fff;
+  color: #332219;
+}
+
+/* Botões personalizados */
+.btn-custom {
+  background-color: #332219;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+}
+
+/* Efeito de fumaça suave */
+.smoke-transition {
+  position: relative;
+  overflow: hidden;
+}
+
+.smoke-transition::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('https://www.transparenttextures.com/patterns/cloudy-day.png');
+  background-size: cover;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* Fontes personalizadas para nomes e frases */
+.nome-noivos {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.875rem; /* text-3xl */
+}
+
+.frase-poetica {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-delay-1 { animation-delay: 0.3s; }
+.fade-delay-2 { animation-delay: 0.6s; }
+.fade-delay-3 { animation-delay: 0.9s; }

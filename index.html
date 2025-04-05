@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convite de Casamento - Fabiola & Gilvan</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Link ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+  </head>
+  <body class="flex flex-col items-center justify-center text-center bg-[#fff]">
+
+    <audio id="musicaFundo" autoplay loop preload="auto">
+      <source src="audio/musica.mp3" type="audio/mpeg" />
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <!-- Botão de play/pause -->
+    <button id="audioToggle"
+    class="absolute top-4 right-4 z-50 bg-[#332219] bg-opacity-70 text-white p-2 rounded-full shadow-md hover:bg-opacity-90 transition duration-300"
+    aria-label="Tocar ou pausar música">
+    ⏸️
+    </button>
+
+    <!-- Imagem do casal -->
+    <section class="relative w-full h-screen">
+      <img
+        src="img/casal.jpg"
+        alt="Casal"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute bottom-0 w-full h-28 bg-gradient-to-t from-[#fff] via-white/50 to-transparent"></div>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <section class="pt-12 px-4 pb-16 relative">
+
+      <!-- Iniciais com flor -->
+      <div class="sdn-iniciais mb-6">
+        <span class="sdn-inicial-1">F</span>
+        <span class="text-[35px]">&</span>
+        <span class="sdn-inicial-2">G</span>
+      </div>
+
+      <!-- Poema -->
+      <p class="frase-poetica mb-6 text-center text-lg opacity-0 fade-in-up fade-delay-2">
+        Só eu sei quanto amor eu guardei<br />
+        sem saber que era para você<br />
+        é, só tinha de ser com você.<br />
+        Havia de ser pra você.
+      </p>
+
+      <br />
+
+      <!-- Com as bênçãos -->
+      <p class="mb-4 text-[20px]">Com as bênçãos de Deus</p>
+
+      <br />
+
+      <!-- Nome dos noivos -->
+      <h2 class="nome-noivos mb-2 text-center text-[50px] font-cursive opacity-0 fade-in-up fade-delay-2">Fabiola & Gilvan</h2>
+
+      <br />
+
+      <!-- Convidam para... -->
+      <p class="mb-2 text-[20px]">Convidam para o seu casamento</p>
+
+      <br />
+
+      <!-- Data -->
+      <p class="mb-2 font-semibold text-[20px]">Sábado | 21.Junho.2025</p>
+
+      <br />
+
+      <!-- Local da cerimônia -->
+      <p class="mb-6 leading-relaxed text-[15px]">
+        16 Horas<br />
+        Paróquia Nossa Senhora de Fátima<br />
+        Rua São Caetano, 193<br />
+        Fartura/SP
+      </p>
+
+      <br />
+
+      <!-- Botões -->
+      <div class="grid grid-cols-3 gap-4 mt-8 text-[#332219] text-center">
+        <!-- Local da Missa -->
+        <a href="https://maps.app.goo.gl/i2PYNygQc986Cqd8A"
+           target="_blank"
+           class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
+          <i data-lucide="church" class="w-8 h-8 mb-1"></i>
+          <span class="text-sm">Local da Missa</span>
+        </a>
+      
+        <!-- Local da Recepção -->
+        <a href="https://maps.app.goo.gl/dah6PNUcqUdtNsocA"
+           target="_blank"
+           class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
+          <i data-lucide="glass-water" class="w-8 h-8 mb-1"></i>
+          <span class="text-sm">Local da Recepção</span>
+        </a>
+      
+        <!-- Sugestões de Presentes -->
+        <a href="https://noivos.casar.com/fabiolaegilvan"
+           target="_blank"
+           class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
+          <i data-lucide="gift" class="w-8 h-8 mb-1"></i>
+          <span class="text-sm">Sugestões de Presentes</span>
+        </a>
+      </div>
+
+      <br />
+      <br />
+      
+      <!-- Instrução botões -->
+      <p class="mb-6 leading-relaxed text-[15px]">
+        - Utilize os botões acima para navegar -
+      </p>
+
+    </section>
+
+    <section class="text-center text-[#332219] animate-fade-in">
+      <h2 class="text-2xl font-semibold mb-4">Faltam</h2>
+      <div id="countdown" class="flex justify-center gap-6 text-xl sm:text-2xl font-bold">
+        <div>
+          <span id="days">00</span><br><span class="text-sm font-normal">dias</span>
+        </div>
+        <div>
+          <span id="hours">00</span><br><span class="text-sm font-normal">horas</span>
+        </div>
+        <div>
+          <span id="minutes">00</span><br><span class="text-sm font-normal">min</span>
+        </div>
+        <div>
+          <span id="seconds">00</span><br><span class="text-sm font-normal">seg</span>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Rodapé com imagem de paisagem -->
+    <footer class="w-full mt-10">
+      <img
+        src="img/paisagem.png"
+        alt="Paisagem romântica"
+        class="w-full object-cover h-80"
+        loading="lazy"
+      />
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

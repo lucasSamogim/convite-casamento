@@ -1,21 +1,19 @@
-lucide.createIcons();
-
 const audio = document.getElementById("musicaFundo");
 const toggleBtn = document.getElementById("audioToggle");
 
 // Define volume inicial
 audio.volume = 0.2;
 
-toggleBtn.addEventListener("click", () => {
-  if (!audio.paused) {
-    audio.pause();
-    toggleBtn.textContent = "▶️"; // muda para play
-  } else {
-    audio.play();
-    toggleBtn.textContent = "⏸️"; // muda para pause
-  }
+  toggleBtn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.textContent = "⏸️"; // muda para pause
+    } else {
+      audio.pause();
+      toggleBtn.textContent = "▶️"; // muda para play
+    }
   });
-
+  
   //Countdown para o Casamento
 
   function updateCountdown() {

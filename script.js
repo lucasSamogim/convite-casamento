@@ -7,12 +7,12 @@ const toggleBtn = document.getElementById("audioToggle");
 audio.volume = 0.2;
 
 toggleBtn.addEventListener("click", () => {
-  if (audio.paused) {
-    audio.play();
-    toggleBtn.textContent = "⏸️"; // muda para pause
-  } else {
+  if (!audio.paused) {
     audio.pause();
     toggleBtn.textContent = "▶️"; // muda para play
+  } else {
+    audio.play();
+    toggleBtn.textContent = "⏸️"; // muda para pause
   }
   });
 

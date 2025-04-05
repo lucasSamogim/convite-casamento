@@ -21,7 +21,7 @@
   </head>
   <body class="flex flex-col items-center justify-center text-center bg-[#fff]">
 
-    <audio id="musicaFundo" autoplay loop preload="auto">
+    <audio id="musicaFundo" autoplay="autoplay" loop preload="auto">
       <source src="audio/musica.mp3" type="audio/mpeg" />
       Seu navegador não suporta áudio HTML5.
     </audio>
@@ -55,10 +55,10 @@
 
       <!-- Poema -->
       <p class="frase-poetica mb-6 text-center text-lg opacity-0 fade-in-up fade-delay-2">
-        Só eu sei quanto amor eu guardei<br />
-        sem saber que era para você<br />
-        é, só tinha de ser com você.<br />
-        Havia de ser pra você.
+        "Assim, eles já não são dois,<br />
+        mas sim uma só carne. Portanto, o<br />
+        que Deus uniu, ninguém separa"<br />
+        <em>(Mateus 19:6)</em>
       </p>
 
       <br />
@@ -93,30 +93,55 @@
 
       <br />
 
+      <!-- Poema -->
+      <p class="frase-poetica mb-6 text-center text-lg opacity-0 fade-in-up fade-delay-2">
+        "Acima de tudo,<br />
+        porém, revistam-se do<br />
+        amor, que é o elo perfeito."<br />
+        <em>(Colossenses 3:14)</em>
+      </p>
+
+      <br />
+
       <!-- Botões -->
       <div class="grid grid-cols-3 gap-4 mt-8 text-[#332219] text-center">
         <!-- Local da Missa -->
         <a href="https://maps.app.goo.gl/i2PYNygQc986Cqd8A"
            target="_blank"
            class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
-          <i data-lucide="church" class="w-8 h-8 mb-1"></i>
-          <span class="text-sm">Local da Missa</span>
+          <img 
+            src="img/igreja.png" 
+            alt="https://www.flaticon.com/br/icones-gratis/catedral - catedral-ícones criados por justicon - Flaticon"
+            class="w-8 h-8 mb-1"
+          >
+          <!-- <i data-lucide="church" class="w-8 h-8 mb-1"></i> -->
+          <span class="text-sm">Local da Cerimônia</span>
         </a>
       
         <!-- Local da Recepção -->
         <a href="https://maps.app.goo.gl/dah6PNUcqUdtNsocA"
            target="_blank"
            class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
-          <i data-lucide="glass-water" class="w-8 h-8 mb-1"></i>
+          <img 
+            src="img/taca-de-champanhe.png" 
+            alt="Beber-ícones criados por Freepik - Flaticon" 
+            class="w-8 h-8 mb-1" 
+          />
+          <!-- <i data-lucide="glass-water" class="w-8 h-8 mb-1"></i> -->
           <span class="text-sm">Local da Recepção</span>
         </a>
       
         <!-- Sugestões de Presentes -->
         <a href="https://noivos.casar.com/fabiolaegilvan"
            target="_blank"
-           class="flex flex-col items-center transition-transform duration-300 hover:scale-110">
-          <i data-lucide="gift" class="w-8 h-8 mb-1"></i>
-          <span class="text-sm">Sugestões de Presentes</span>
+           class="flex flex-col items-center transition-transform duration-300 hover:scale-110"> 
+           <img 
+            src="img/casal-de-noivos.png" 
+            alt="www.flaticon.com/br/icones-gratis/casamento Casamento-ícones criados por Freepik - Flaticon" 
+            class="w-8 h-8 mb-1"
+          >
+          <!-- <i data-lucide="gift" class="w-8 h-8 mb-1"></i> -->
+          <span class="text-sm">Site dos<br /> Noivos</span>
         </a>
       </div>
 
@@ -131,7 +156,7 @@
     </section>
 
     <section class="text-center text-[#332219] animate-fade-in">
-      <h2 class="text-2xl font-semibold mb-4">Faltam</h2>
+      <h2 class="text-2xl font-semibold mb-4">Contagem Regressiva</h2>
       <div id="countdown" class="flex justify-center gap-6 text-xl sm:text-2xl font-bold">
         <div>
           <span id="days">00</span><br><span class="text-sm font-normal">dias</span>
@@ -147,6 +172,14 @@
         </div>
       </div>
     </section>
+
+    <br />
+    <br />
+
+    <!-- Nome dos noivos -->
+    <em><h2 class="nome-noivos mb-2 text-center text-[35px] font-cursive opacity-0 fade-in-up fade-delay-2">Esperamos por você!</h2></em>
+
+    <br />
     
 
     <!-- Rodapé com imagem de paisagem -->

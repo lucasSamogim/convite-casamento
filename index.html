@@ -29,6 +29,18 @@
   </head>
   <body class="flex flex-col items-center justify-center text-center bg-[#FAF9F6]">
   
+  <!-- Tela de introdução com o vídeo -->
+  <div id="video-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 md:hidden">
+    <video id="intro-video" class="w-full h-full object-cover" preload="auto" poster="img/thumb-video.png">
+      <source src="video/video-convite.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+    <!-- Botão de Play opcional (ou use o click direto no vídeo) -->
+    <button id="play-video" class="absolute z-50 text-white text-4xl bg-black/50 p-4 rounded-full hover:bg-black/80 transition-all duration-300">
+      ▶️
+    </button>
+  </div>
+
   <div id="mobile-only">
 
       <audio id="musicaFundo" autoplay="autoplay" loop preload="auto">

@@ -36,3 +36,17 @@ audio.volume = 0.2;
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
+
+const videoOverlay = document.getElementById("video-overlay");
+const introVideo = document.getElementById("intro-video");
+const playButton = document.getElementById("play-video");
+
+playButton.addEventListener("click", () => {
+  audio.play();
+  introVideo.play();
+  playButton.style.display = "none";
+});
+
+introVideo.addEventListener("ended", () => {
+  videoOverlay.classList.add("fade-out");
+});

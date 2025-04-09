@@ -42,6 +42,7 @@ const introVideo = document.getElementById("intro-video");
 const playButton = document.getElementById("play-video");
 
 playButton.addEventListener("click", () => {
+  introVideo.muted = false;
   audio.play();
   introVideo.play();
   playButton.style.display = "none";

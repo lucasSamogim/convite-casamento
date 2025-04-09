@@ -31,10 +31,22 @@
   
   <!-- Tela de introdução com o vídeo -->
   <div id="video-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 md:hidden">
-    <video id="intro-video" class="w-full h-full object-cover" preload="auto" poster="img/thumb-video.png">
+    
+    <!-- <video id="intro-video" class="w-full h-full object-cover" preload="auto" poster="img/thumb-video.png">
+      <source src="video/video-convite.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video> -->
+    <video id="intro-video"
+      class="w-full h-full object-cover"
+      preload="auto"
+      muted
+      playsinline
+      webkit-playsinline
+      poster="img/thumb-video.png">
       <source src="video/video-convite.mp4" type="video/mp4">
       Seu navegador não suporta vídeo HTML5.
     </video>
+
     <!-- Botão de Play opcional (ou use o click direto no vídeo) -->
     <button id="play-video"
             class="absolute z-50 flex items-center justify-center w-20 h-20 bg-white/20 border border-[#d4af37] rounded-full text-[#d4af37] hover:bg-white/30 transition-all duration-300 shadow-lg backdrop-blur-md"
@@ -48,7 +60,7 @@
 
   <div id="mobile-only">
 
-      <audio id="musicaFundo" autoplay="autoplay" loop preload="auto">
+      <audio id="musicaFundo" loop preload="auto">
         <source src="audio/musica.mp3" type="audio/mpeg" />
         Seu navegador não suporta áudio HTML5.
       </audio>

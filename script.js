@@ -51,3 +51,15 @@ playButton.addEventListener("click", () => {
 introVideo.addEventListener("ended", () => {
   videoOverlay.classList.add("fade-out");
 });
+
+
+const arrow = document.getElementById('scroll-arrow');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    arrow.classList.remove('opacity-0');
+  } else {
+    arrow.classList.add('opacity-0');
+  }
+});
+
